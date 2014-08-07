@@ -2,10 +2,10 @@
 
 Usage:
 
-    ```bash
-    git clone git@github.com:mcarifio/fish.git ~/.config/fish
-    emacs ~/.config/fish ## add your stuff
-    ```
+```bash
+git clone git@github.com:mcarifio/fish.git ~/.config/fish
+emacs ~/.config/fish ## add your stuff
+```
 
 Layout:
 
