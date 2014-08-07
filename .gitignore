@@ -5,3 +5,6 @@
 # fish
 fishd.*
 fish_history
+
+# ignore your personal stuff
+pbin/*

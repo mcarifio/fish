@@ -1,4 +1,4 @@
 # Mike Carifio <mike@carif.io>
 
 # Add to the path as needed
-set -gx PATH ~/.config/fish/bin ~/.rvm/bin /opt/*/current/bin $PATH
+set -gx PATH ~/.rvm/bin ~/.config/fish/{p,}bin  /opt/*/current/bin $PATH
