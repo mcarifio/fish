@@ -3,6 +3,12 @@
 Usage:
 
 ```bash
+sudo apt-get update
+sudo apt-get install -y fish
+chsh -s /usr/bin/fish
+
+# logout and log back in
+
 git clone git@github.com:mcarifio/fish.git ~/.config/fish
 emacs ~/.config/fish ## add your stuff
 ```
