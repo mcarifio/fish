@@ -1,5 +1,10 @@
 # copy-paste this function body; note: function will be resourced if modified in a repl
 # template.fn 1 2 3 4 5 6
+
+# pre-load
+echo "before $(status filename)" >&2
+
+
 function template.fn+args --argument-names first second third --description "use template.fn to create new functions"
     # show the caller invocation; note that --flags will be swallowea
     echo (status current-function) $argv "## " (status filename)  >&2
@@ -8,3 +13,6 @@ function template.fn+args --argument-names first second third --description "use
     
     echo (status current-function) body tbs >&2
 end
+
+# post-load
+echo "after $(status filename)" >&2

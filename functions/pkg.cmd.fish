@@ -1,4 +1,4 @@
-function pkg --description 'Return preferred package manager command'
+function pkg.cmd --description 'Return preferred package manager command'
     for cmd in dnf apt brew eget
         if command --query $cmd
             echo $cmd
