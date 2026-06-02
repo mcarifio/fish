@@ -7,24 +7,8 @@
 set --universal fish_greeting
 
 set --universal --export fish_user_paths
-fish_add_path ~/.local/bin ~/.cargo/bin ~/go/bin ~/.config/*/bin ~/opt/*/current/bin
+fish_add_path ~/.local/bin ~/.cargo/bin ~/go/bin ~/.config/*/bin ~/opt/*/current/bin /etc/fish{/dev,}/bin
 
-# cargo
-if test -d ~/.cargo
-    fish_add_path ~/.cargo
-end
-
-# golang
-if command --query go
-   fish_add_path ~/go/bin
-end
-   
-
-# mise
-if command --query mise
-    mise use --global usage
-    fish_add_path (mise bin-paths)
-end
 
 # uv
 if command --query uv

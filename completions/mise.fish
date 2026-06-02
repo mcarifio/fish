@@ -1,5 +1,3 @@
-status is-interactive; or return 0
-set --local cmd (path basename --no-extension (status filename))
-command --quiet $cmd; or return 0
-
-$cmd completion (shell) | source
+# mise
+# symlink ~/.config/fish/completions/mise.fish iff (command --quiet direnv)
+mise activate (shell) | source

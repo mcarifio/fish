@@ -12,6 +12,6 @@ end
 function emacs --wraps emacs
     # argparse ...
     set --local cmd (status current-function)
-    command $cmd $argv
+    command $cmd $argv &
     #           ^ initial flags
 end

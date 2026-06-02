@@ -1,1 +1,1 @@
-abbr --add ec --position command emacsclient
+abbr --add --position command ec emacsclient
